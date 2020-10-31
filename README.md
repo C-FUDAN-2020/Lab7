@@ -38,7 +38,8 @@ int main(){
 	return 0;
 }
 ```
-<center class="half">
+<div style="align: center">
     <img src="./arrayAccess.png" width="900" alt="测试结果"/>
-</center>
+</div>
+
 
