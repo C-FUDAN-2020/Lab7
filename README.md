@@ -38,5 +38,7 @@ int main(){
 	return 0;
 }
 ```
-<div align=center>![测试结果](./arrayAccess.png)
-</div>
+<center class="half">
+    <img src="./arrayAccess.png" width="900" alt="测试结果"/>
+</center>
+
