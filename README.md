@@ -38,4 +38,4 @@ int main(){
 	return 0;
 }
 ```
-
+ <img src="./arrayAccess.png" width = "300" alt="测试实验" align=center />
