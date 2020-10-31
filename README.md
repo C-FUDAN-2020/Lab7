@@ -71,7 +71,7 @@ int main(){
     scanf("%d",&count);
     printf("Please input %d numbers: ",count);
     int nums[count];
-    // 通过循环读入为数组元素赋值
+    // 通过循环读入为数组元素赋值，切记使用scanf需要通过&取地址
     for(int i = 0; i < count; i++){
         scanf("%d",&nums[i]);
     }
