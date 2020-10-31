@@ -16,6 +16,50 @@
 
 截止时间：北京时间 2020年11月08日 23:59:59
 
+## 一维数组知识（可跳过）
+
+### 一维数组的定义
+
+定义一维数组的一般形式为`类型说明符 标识符[常量表达式]`。在当前流行的C++系统中，定义数组不再要求`常量表达式`，只需要具有确定整数值的表达式。下面几个例子都是合法定义的数组：
+```c
+int score[40];
+```
+```c
+int number = 10;
+char s[number];
+```
+```c
+#define NUMBER_COUNT 20
+float numbers[NUMBER_COUNT];
+```
+### 一维数组的初始化
+一维数组的初始化可以选择在定义时进行：
+```c
+// 初始化所有元素
+int d[5] = {0,1,2,3,4}; 
+
+// 初始化前3个元素
+int e[5] = {0,1,2}; 
+
+//定义时初始化，且不指定数组长度，默认数组长度为集合的长度。即数组a的长度是3
+int a[] = {0,1,2};
+```
+
+此外，一维数组的初始化也可以单独赋值：
+```c
+int d[5];
+// 第一个元素初始化为4
+d[0] = 4; 
+
+// 结合循环初始化所有元素
+for(int i = 0; i < 5; i++){
+  d[i] = i + 1;
+}
+```
+
+### 一维数组的访问
+数组是一片连续的内存空间，数组的元素紧密存储。**牢记数组元素的下标从0开始，直至数组元素个数减1**。
+
 ## 思考题目
 
 > 请提交书面答案的文档
@@ -61,7 +105,8 @@ int main(){
 	int num[5];
 	int sum = 0;
 	for(int i = 1; i<= 5; i++){
-		scanf("%d",&num[i]); // Here we store the input integer at nums[i].
+	        // Here we store the input integer at nums[i].
+		scanf("%d",&num[i]); 
 		printf("Number %d: %d\n",i,num[i]);
 	}
 	for(int i = 1; i <= 5; i++){
@@ -92,6 +137,7 @@ int main(){
 > 4. 不考虑其他非法输入。
 
 <div style="align: center">
-    <img src="./variance.png" width="900" alt="测试结果"/>
+    <img src="./variance.png" width="900" alt="程序示例结果"/>
 </div>
+
 ### PJ地图输出（初步）
