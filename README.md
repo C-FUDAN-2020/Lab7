@@ -38,4 +38,5 @@ int main(){
 	return 0;
 }
 ```
- <img src="./arrayAccess.png" width = "800" alt="测试实验" style="margin:0 auto" />
+<div align=center>![测试结果](./arrayAccess.png)
+</div>
